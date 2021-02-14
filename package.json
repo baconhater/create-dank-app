@@ -1,0 +1,43 @@
+{
+  "name": "create-dank-app",
+  "version": "1.0.0",
+  "description": "create-dank-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baconhater/create-dank-app.git"
+  },
+  "keywords": [
+    "dank",
+    "react"
+  ],
+  "author": "Baconhater",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baconhater/create-dank-app/issues"
+  },
+  "homepage": "https://github.com/baconhater/create-dank-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.1.0",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "style-loader": "^2.0.0",
+    "ttf-loader": "^1.0.2",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
