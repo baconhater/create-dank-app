@@ -9,10 +9,9 @@ import { history } from './core/_helpers/history';
 
 function App() {
   return (
-      <Router history={history}>
-          //TODO SHELL
-        <Shell />
-      </Router>
+    <Router history={history}>
+      <Shell />
+    </Router>
   );
 }
 

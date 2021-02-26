@@ -1,0 +1,99 @@
+@import "./variables";
+
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+/*
+ * Framework overrides
+ */
+
+@font-family: Roboto-Regular;
+
+// Colors
+@primary-color: @tf-primary;
+
+// Layout
+@layout-body-background: var(--tf-grey-6);
+@layout-header-height: 60px;
+
+// Menu
+@menu-inline-toplevel-item-height: 60px;
+@menu-item-height: 60px;
+@menu-collapsed-width: 80px;
+@menu-item-active-border-width: 4px;
+@menu-icon-size: 16px;
+@menu-icon-size-lg: 16px;
+@menu-item-vertical-margin: 0px;
+@menu-item-font-size: 16px;
+@menu-item-boundary-margin: 8px;
+
+// Menu
+.ant-menu-inline,
+.ant-menu-vertical {
+  border-right: unset;
+}
+.ant-layout-header .ant-menu {
+  line-height: 59px;
+}
+.ant-menu-item .anticon,
+.ant-menu-submenu .anticon {
+  margin-right: unset;
+  font-size: 20px;
+}
+.ant-menu-horizontal {
+  border-bottom: unset;
+  font-size: 20px;
+}
+.ant-menu-horizontal > .ant-menu-item {
+  top: initial;
+  border-bottom: unset;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background: var(--tf-primary);
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+.ant-menu-horizontal > .ant-menu-item:hover {
+  background: var(--tf-primary-l-80);
+  border-bottom: unset;
+}
+.ant-menu-horizontal > .ant-menu-item.ant-menu-item-selected {
+  background: var(--tf-primary-l-80);
+  &::before {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+// Spinner
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: unset;
+  z-index: 800;
+}
+.ant-spin-blur::after {
+  opacity: 0.5;
+}
+.ant-spin-blur {
+  opacity: 1;
+}
+
+// Back Top
+.ant-back-top {
+  right: 60px;
+  bottom: 60px;
+}
+.ant-back-top-content {
+  background-color: var(--tf-primary-l-50);
+}
+.ant-back-top-content:hover {
+  background-color: var(--tf-primary);
+}

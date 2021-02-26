@@ -1,0 +1,118 @@
+/*
+ * Vars
+ */
+
+@tf-primary: #41057f;
+@tf-secondary: #767cff;
+@tf-success: #10cc79;
+@tf-warn: #faca41;
+@tf-info: #72a8f0;
+@tf-error: #ed4958;
+
+// Overwrite Gulp: @tf-primary: ##COLOR##;
+
+@tf-white: #ffffff;
+
+@tf-grey-1: #353c47;
+@tf-grey-2: #545f79;
+@tf-grey-3: #a7adbb;
+@tf-grey-4: #d1d6e0;
+@tf-grey-5: #dfe2ea;
+@tf-grey-6: #f5f6fa;
+
+:root {
+  /* Border Radious */
+  --tf-border-radius: 4px;
+
+  /* Primary */
+  --tf-primary: @tf-primary;
+  --tf-primary-d-50: multiply(@tf-primary, rgba(0, 0, 0, 0.5));
+  --tf-primary-d-30: multiply(@tf-primary, rgba(0, 0, 0, 0.3));
+  --tf-primary-l-30: screen(@tf-primary, rgba(255, 255, 255, 0.3));
+  --tf-primary-l-50: screen(@tf-primary, rgba(255, 255, 255, 0.5));
+  --tf-primary-l-80: screen(@tf-primary, rgba(255, 255, 255, 0.8));
+  --tf-primary-l-90: screen(@tf-primary, rgba(255, 255, 255, 0.9));
+
+  /* Secondary */
+  --tf-secondary: @tf-secondary;
+  --tf-secondary-d-50: multiply(@tf-secondary, rgba(0, 0, 0, 0.5));
+  --tf-secondary-d-30: multiply(@tf-secondary, rgba(0, 0, 0, 0.3));
+  --tf-secondary-l-30: screen(@tf-secondary, rgba(255, 255, 255, 0.3));
+  --tf-secondary-l-50: screen(@tf-secondary, rgba(255, 255, 255, 0.5));
+  --tf-secondary-l-80: screen(@tf-secondary, rgba(255, 255, 255, 0.8));
+  --tf-secondary-l-90: screen(@tf-secondary, rgba(255, 255, 255, 0.9));
+
+  /* Success */
+  --tf-success: @tf-success;
+  --tf-success-d-50: multiply(@tf-success, rgba(0, 0, 0, 0.5));
+  --tf-success-d-30: multiply(@tf-success, rgba(0, 0, 0, 0.3));
+  --tf-success-l-30: screen(@tf-success, rgba(255, 255, 255, 0.3));
+  --tf-success-l-50: screen(@tf-success, rgba(255, 255, 255, 0.5));
+  --tf-success-l-80: screen(@tf-success, rgba(255, 255, 255, 0.8));
+  --tf-success-l-90: screen(@tf-success, rgba(255, 255, 255, 0.9));
+
+  /* Warning */
+  --tf-warn: @tf-warn;
+  --tf-warn-d-50: multiply(@tf-warn, rgba(0, 0, 0, 0.5));
+  --tf-warn-d-30: multiply(@tf-warn, rgba(0, 0, 0, 0.3));
+  --tf-warn-l-30: screen(@tf-warn, rgba(255, 255, 255, 0.3));
+  --tf-warn-l-50: screen(@tf-warn, rgba(255, 255, 255, 0.5));
+  --tf-warn-l-80: screen(@tf-warn, rgba(255, 255, 255, 0.8));
+  --tf-warn-l-90: screen(@tf-warn, rgba(255, 255, 255, 0.9));
+
+  /* Information */
+  --tf-info: @tf-info;
+  --tf-info-d-50: multiply(@tf-info, rgba(0, 0, 0, 0.5));
+  --tf-info-d-30: multiply(@tf-info, rgba(0, 0, 0, 0.3));
+  --tf-info-l-30: screen(@tf-info, rgba(255, 255, 255, 0.3));
+  --tf-info-l-50: screen(@tf-info, rgba(255, 255, 255, 0.5));
+  --tf-info-l-80: screen(@tf-info, rgba(255, 255, 255, 0.8));
+  --tf-info-l-90: screen(@tf-info, rgba(255, 255, 255, 0.9));
+
+  /* Error */
+  --tf-error: @tf-error;
+  --tf-error-d-50: multiply(@tf-error, rgba(0, 0, 0, 0.5));
+  --tf-error-d-30: multiply(@tf-error, rgba(0, 0, 0, 0.3));
+  --tf-error-l-30: screen(@tf-error, rgba(255, 255, 255, 0.3));
+  --tf-error-l-50: screen(@tf-error, rgba(255, 255, 255, 0.5));
+  --tf-error-l-80: screen(@tf-error, rgba(255, 255, 255, 0.8));
+  --tf-error-l-90: screen(@tf-error, rgba(255, 255, 255, 0.9));
+
+  /* White */
+  --tf-white: @tf-white;
+
+  /* Grey Sale */
+  --tf-grey-1: @tf-grey-1;
+  --tf-grey-2: @tf-grey-2;
+  --tf-grey-3: @tf-grey-3;
+  --tf-grey-4: @tf-grey-4;
+  --tf-grey-5: @tf-grey-5;
+  --tf-grey-6: @tf-grey-6;
+
+  /* Shadows */
+  --tf-shadow: 0 6px 11px -2px rgba(181, 200, 219, 0.18),
+    0 3px 6px 0 rgba(181, 200, 219, 0.3);
+  --tf-shadow-01: 0 2px 4px 0 rgba(181, 200, 219, 0.3),
+    0 2px 4px -1px rgba(181, 200, 219, 0.18);
+  --tf-shadow-02: 0 2px 4px 0 rgba(181, 200, 219, 0.3),
+    0 6px 8px -2px rgba(181, 200, 219, 0.18);
+  --tf-shadow-03: 0 3px 6px 0 rgba(181, 200, 219, 0.3),
+    0 6px 11px -2px rgba(181, 200, 219, 0.18);
+  --tf-shadow-04: 0 4px 6px 0 rgba(181, 200, 219, 0.3),
+    0 4px 14px -1px rgba(181, 200, 219, 0.18);
+  --tf-shadow-06: 0 6px 10px 0 rgba(181, 200, 219, 0.3),
+    0 1px 18px 0 rgba(181, 200, 219, 0.18);
+  --tf-shadow-08: 0 8px 10px 1px rgba(181, 200, 219, 0.3),
+    0 3px 14px 2px rgba(181, 200, 219, 0.18);
+  --tf-shadow-12: 0 12px 17px 2px rgba(181, 200, 219, 0.3),
+    0 5px 22px 4px rgba(181, 200, 219, 0.18);
+  --tf-shadow-16: 0 16px 24px 2px rgba(181, 200, 219, 0.3),
+    0 6px 30px 5px rgba(181, 200, 219, 0.18);
+  --tf-shadow-24: 0 24px 38px 3px rgba(181, 200, 219, 0.3),
+    0 9px 46px 8px rgba(181, 200, 219, 0.18);
+  --tf-shadow-info: 0 0 3px 1px var(--tf-info-l-50),
+    0 0 3px 0 var(--tf-info-l-50);
+
+  /* Animations */
+  --animationTiming: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
